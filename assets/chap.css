@@ -1,0 +1,23 @@
+:root {
+    font-size: 20px;
+}
+html, body {
+    margin: 0px;
+    font-size: 1rem;
+}
+body {
+    background-clip: border-box;
+}
+@media (max-width: 900px) {
+    :root {
+        font-size: 16px;
+    }
+}
+.chap {
+    padding: 2rem;
+    margin: auto;
+    width: 70%;
+    height: auto;
+    box-shadow: 0.1rem 0.1rem 0.4rem 0.1rem #000;
+}
+
