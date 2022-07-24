@@ -71,17 +71,9 @@ body::-webkit-scrollbar-track {
     padding: 1rem;
     color: var(--text-color);
 }
-@keyframes grow {
-    from {
-        transform: scale(1);
-    }
-    tp {
-        transform: scale(1.1);
-    }
-}
 .chap:hover {
     background-color: var(--color2);
-    animation: grow;
+    transform: scale(1.1);
 }
 @keyframes show {
     from {
@@ -97,8 +89,7 @@ body::-webkit-scrollbar-track {
 }
 .box-chap {
     padding: 2rem;
-    margin: auto;
-    width: 50%;
+    width: 40rem;
     height: 90vh;
     box-shadow: 0.1rem 0.1rem 0.4rem 0.1rem #000;
 }
@@ -106,6 +97,7 @@ body::-webkit-scrollbar-track {
     width: 100%;
     height: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 } 
 .reading-box::-webkit-scrollbar {
     width: 0.2rem;
