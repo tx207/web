@@ -1,21 +1,10 @@
 :root {
     --color1: rgb(236, 234, 234);
+    --color2: rgb(207, 207, 207);
+    --background-main: rgb(221, 221, 221);
     font-size: 20px;
     --text-color: rgb(39, 39, 39);
     --white: #fff;
-}
-html, body {
-    margin: 0px;
-    font-size: 0.8rem;
-}
-body {
-    background-clip: border-box;
-    background-color: rgb(221, 221, 221);
-}
-@media (max-width: 900px) {
-    :root {
-        font-size: 17px;
-    }
 }
 .welcome {
     background-color: rgb(66, 65, 65);
@@ -59,7 +48,6 @@ body {
     padding: 0;
     margin: 0;
     border-radius: inherit;
-    background-color: var(--white);
     visibility: hidden;
 }
 .chap {
@@ -73,7 +61,7 @@ body {
     color: var(--text-color);
 }
 .chap:hover {
-    background-color: var(--color1);
+    background-color: var(--color2);
 }
 .find:hover .list-chap {
     visibility: visible;
