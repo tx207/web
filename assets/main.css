@@ -6,6 +6,11 @@
     --text-color: rgb(39, 39, 39);
     --white: #fff;
 }
+@media all and (max-width: 1000px) {
+    :root {
+        font-size: 17px;
+    }
+}
 .welcome {
     background-color: rgb(66, 65, 65);
     height: 17.5rem;
@@ -69,6 +74,7 @@
 }
 .in4 {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     margin: 5rem;
 }
@@ -79,7 +85,9 @@
     background-color: var(--color1);
     border-radius: 1rem;
     position: relative;
-    box-shadow: 0.1rem 0.1rem 0.4rem 0.1rem rgb(75, 75, 75);
+    box-shadow: 0px 0px 7px 4px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 7px 4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 7px 4px rgba(0,0,0,0.75);
     padding: 2.5%;
     margin: 2rem auto;
 }

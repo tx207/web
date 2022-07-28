@@ -6,6 +6,11 @@
     --text-color: rgb(39, 39, 39);
     --white: #fff;
 }
+@media all and (max-width: 1000px) {
+    :root {
+        font-size: 16px;
+    }
+}
 body::-webkit-scrollbar {
     width: 0.5rem;
 }
@@ -28,6 +33,22 @@ body::-webkit-scrollbar-track {
     border-style: solid;
     border-color: rgb(48, 48, 48);
 }
+.back-box {
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: var(--white);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.back-box p {
+    margin: 0;
+}
+.back-box:hover {
+    background-color: rgb(54, 54, 54);
+}
 .find {
     margin: 2rem;
     width: 60%;
@@ -48,6 +69,7 @@ body::-webkit-scrollbar-track {
     width: 10%;
     color: var(--text-color);
     margin: 1rem;
+    margin-right: -0.5rem;
 }
 .list-chap {
     display: flex;
@@ -85,26 +107,18 @@ body::-webkit-scrollbar-track {
 }
 .find:hover .list-chap {
     visibility: visible;
-    animation: show ease-in 0.2s;
+    animation: show ease-in 0.1s;
 }
 .box-chap {
-    padding: 2rem;
-    width: 40rem;
-    height: 90vh;
-    box-shadow: 0.1rem 0.1rem 0.4rem 0.1rem #000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .reading-box {
-    width: 100%;
-    height: 100%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
-} 
-.reading-box::-webkit-scrollbar {
-    width: 0.2rem;
-}
-.reading-box::-webkit-scrollbar-thumb {
-    background-color: var(--color1);
-}
-.reading-box::-webkit-scrollbar-track {
-    background-color: transparent;
+    width: 600px;
+    height: 880px;
+    box-shadow: 0px 0px 7px 4px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 7px 4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 7px 4px rgba(0,0,0,0.75);
+    margin: 0.5rem;
 }
